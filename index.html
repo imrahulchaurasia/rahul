@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>websit</title>
+ <style type="text/css">
+body{background-color: rgb(206, 242, 216);
+    margin: 0;
+    font-size: system-ul;
+}
+     .parallax{
+        background-image:url("vegetables.jpg");
+        height:max-content;
+        background-position:center;
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size:cover
+    }
+    .page-title{
+        background: rgba( 0,0,0,0,5) ;
+        text-align: center;
+        color:rgb(12, 3, 186);
+        padding: 50px;
+        font-variant: small-caps;
+        font-size: 100px; 
+        font-family: fantasy;
+        letter-spacing: 20px;
+
+    }
+   
+
+    
+   #sticky{
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+    }
+    .menu{
+        background-color:rgb(28, 100, 28);
+        text-align: center;
+    }
+    .menu-ul{
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+    .menu-ul li{
+        font-size: 17px;
+        list-style: none;
+        display: inline-block;
+        padding: 25px 25px 26px 25px;
+
+    }
+    .a-menu{
+        text-decoration: none;
+        color: rgb(246, 243, 250);
+    }
+    .menu-ul li:hover{
+        background: rgb(143, 80, 80);
+        transform: scale(1.1);
+
+    }
+    
+
+    .search-box{
+        border: 1px solid rgb(249, 244, 244);
+        border-radius: 50px;
+        background-color: rgb(189, 244, 49);
+        width:max-content;
+        display: inline-block;
+        margin: 8px;
+
+    }
+    .search-box:hover{
+        box-shadow: 0 0 10px 2px;
+        border: 1px solid;
+
+    }
+    .search-input{
+        width: 250px;
+        border: none;
+        font-size: 16px;
+        outline: none;
+        background: transparent;
+        margin: 15px 0 0 10px;
+
+    }
+    i{
+        font-size: 20px;
+        margin: 0 10px 0 0;
+        
+    }
+    button{
+        background: transparent;
+        border: none;
+        outline: none;
+
+    }
+    .container{
+        margin: 50px 50px -67px 5%;
+        width: 90%;
+        text-align: center;
+    }
+.categories ,.item{
+    width: max-content;
+    margin: 25px;
+    border: 1px solid;
+    
+    display: inline-block;
+}
+.item-imag{
+    height: 200px;
+    width: 200px;
+    border-radius: 0 0 50px 50px;
+    padding: 10px;
+    display: inline-block;
+}
+.description{
+    height: 200px;
+    width: 300px;
+    padding: 5px;
+    display: inline-block;
+}
+.buy{
+    color: rgb(19, 12, 12);
+    border: 2px solid black;
+    background-color: yellow;
+
+    
+}
+button{
+			
+			margin-right: 15px;
+			margin-top: 8px;
+         border-radius: 20px;}
+         .coupon-btn{
+            border: 1px solid rgb(85, 225, 14);
+            color: rgb(249, 10, 10);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            
+         }
+         .deal {
+            display: inline-block;
+            margin: 20px;
+            padding: 50px;
+            background-color: rgb(0, 128, 255);
+            
+         }
+.last{
+    background-image: url('grocery.jpg');
+} 
+.footer{
+    background-color: darkorange;
+    text-align: center;
+    padding: 20px;
+}
+.quick-links{
+color: rgb(200, 10, 10);
+font-size: 20px;
+font-weight: bold;
+display: inline-block;
+min-width: 30%;
+}
+.a-links:hover{
+    color: red;
+
+}
+.copyright{
+    font-size: 16px;
+    font-family: verdana,arial,sans-serif;
+    text-align: center;
+    margin: 15px;
+
+}
+
+
+ 
+
+
+      
+         
+
+ </style>
+</head>
+<body>
+   
+
+    <div class ="parallax">
+   <div class="page-title">Grocery stores</div>
+
+</div>
+   
+   
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+            <a href="#" class="a-menu"><li>Home</li></a>
+            <a href="#" class="a-menu"><li>Deals</li></a>
+            <a href="#" class="a-menu"><li>Vegetables</li></a>
+            <a href="#" class="a-menu"><li>Fruits</li></a>
+            <a href="#" class="a-menu"><li>Meat</li></a>
+            <a href="#" class="a-menu"><li>Stores items</li></a>
+            <a href="#" class="a-menu"><li>Cart</li></a>
+        </ul>
+        <div class="search-box">
+            <form>
+            <input type="text" placeholder="search"name="search"
+            class="search-input">
+            <button type="submit"><i class="submit"></i>Submit</button>
+            </form>       
+        </div>
+    </div>
+
+    <div class ="parallax">
+        <div class="page-title">Vegetables</div></div>
+
+
+   
+   
+    
+   
+    <div class="container">
+    <a href="#vegetable">
+        <div class="categories">
+            <img src="potato.jpg" class="item-imag">
+            </div>
+            <div class="description">
+                <b>Potato</b>
+                <div class="item-select">
+                Price:Rs.60/Kg
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+
+                </select><br>
+                <button class="buy">Buy Now</button>
+
+            </div>
+    </a> 
+    <a href="#vegetable">
+        <div class="categories">
+            <img src="pepper.jpg" class="item-imag">
+          
+        </div>
+        <div class="description">
+            <b>Pepper</b>
+            <div class="item-select">
+            Price:Rs.100/Kg
+            </div>
+            <label>Qty:</label>
+            <select class="item-select">
+                <option>250 grams</option>
+                <option>500 grams</option>
+                <option>750 grams</option>
+                <option>1000 grams</option>
+
+            </select><br>
+            <button class="buy">Buy Now</button>
+
+        </div>
+    </a>
+    <a href="#vegetable">
+        <div class="categories">
+            <img src="carrot.jpg" class="item-imag">
+            
+        </div>
+        <div class="description">
+            <b>Carrot</b>
+            <div class="item-select">
+            Price:Rs.80/Kg
+            </div>
+            <label>Qty:</label>
+            <select class="item-select">
+                <option>250 grams</option>
+                <option>500 grams</option>
+                <option>750 grams</option>
+                <option>1000 grams</option>
+
+            </select><br>
+            <button class="buy">Buy Now</button>
+
+        </div>
+    </a>    
+    <a href="#vegetable">
+        <div class="categories">
+            <img src="spinach.jpg" class="item-imag">
+           
+        </div>
+        <div class="description">
+            <b>Spinach</b>
+            <div class="item-select">
+            Price:Rs.50/Kg
+            </div>
+            <label>Qty:</label>
+            <select class="item-select">
+                <option>250 grams</option>
+                <option>500 grams</option>
+                <option>750 grams</option>
+                <option>1000 grams</option>
+
+            </select><br>
+            <button class="buy">Buy Now</button>
+
+        </div>
+    </a>    
+    </div>
+    <div class ="parallax">
+    <div class="page-title">Fruits</div></div>
+
+
+    <div class="container">
+        <a href="#fruits">
+            <div class="categories">
+                <img src="apple.jpg" class="item-imag">
+                </div>
+                <div class="description">
+                    <b>Apple</b>
+                    <div class="item-select">
+                    Price:Rs.150/Kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+    
+                    </select><br>
+                    <button class="buy">Buy Now</button>
+    
+                </div>
+        </a> 
+       
+            <a href="#fruits">
+      
+            <div class="categories">
+                <img src="grapes.jpg" class="item-imag">
+              
+            </div>
+            <div class="description">
+                <b>Grapes</b>
+                <div class="item-select">
+                Price:Rs.110/Kg
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+    
+                </select><br>
+                <button class="buy">Buy Now</button>
+    
+            </div>
+        </a>
+        <div class="container">
+            <a href="#fruits">
+            <div class="categories">
+                <img src="guava.jpg" class="item-imag">
+                
+            </div>
+            <div class="description">
+                <b>Guava</b>
+                <div class="item-select">
+                Price:Rs.80/Kg
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+    
+                </select><br>
+                <button class="buy">Buy Now</button>
+    
+            </div>
+        </a>    
+        
+            <a href="#fruits">
+            <div class="categories">
+                <img src="mango.jpg" class="item-imag">
+               
+            </div>
+            <div class="description">
+                <b>Mango</b>
+                <div class="item-select">
+                Price:Rs.90/Kg
+                </div>
+                <label>Qty:</label>
+                <select class="item-select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+    
+                </select><br>
+                <button class="buy">Buy Now</button>
+    
+            </div>
+        </a>    
+        
+            
+        </div>
+        <div class ="parallax">
+        <div class="page-title">Meat</div></div>
+        <div class="container">
+           
+                <a href="#meat">
+          
+                <div class="categories">
+                    <img src="fish.jpg" class="item-imag">
+                  
+                </div>
+                <div class="description">
+                    <b>Fish</b>
+                    <div class="item-select">
+                    Price:Rs.300/Kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+        
+                    </select><br>
+                    <button class="buy">Buy Now</button>
+        
+                </div>
+           
+            </a>    
+            
+                <a href="#meat">
+                <div class="categories">
+                    <img src="egg.jpg" class="item-imag">
+                   
+                </div>
+                <div class="description">
+                    <b>Egg</b>
+                    <div class="item-select">
+                    Price:Rs.80/dozen
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>1dozen</option>
+                        <option>2dozen</option>
+                       
+        
+                    </select><br>
+                    <button class="buy">Buy Now</button>
+        
+                </div>
+            </a>    
+            
+                
+           
+           
+                <a href="#meat">
+          
+                <div class="categories">
+                    <img src="chicken.jpg" class="item-imag">
+                  
+                </div>
+                <div class="description">
+                    <b>Chicken</b>
+                    <div class="item-select">
+                    Price:Rs.250/Kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+        
+                    </select><br>
+                    <button class="buy">Buy Now</button>
+        
+                </div>
+           
+            </a>    
+            
+                <a href="#meat">
+          
+                <div class="categories">
+                    <img src="meat.jpg" class="item-imag">
+                  
+                </div>
+                <div class="description">
+                    <b>Meat</b>
+                    <div class="item-select">
+                    Price:Rs.600/Kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+        
+                    </select><br>
+                    <button class="buy">Buy Now</button>
+        
+                </div>
+           
+            </a> 
+            </div>
+            <div class ="parallax">
+            <div class="page-title">Store Items</div></div>
+            <a href="#store items">
+          
+                <div class="categories">
+                    <img src="noodles.jpg" class="item-imag">
+                  
+                </div>
+                <div class="description">
+                    <b>Noodles</b>
+                    <div class="item-select">
+                    Price:Rs.50/Pic
+                    </div>
+                  <br>
+                    <button class="buy">Buy Now</button>
+        
+                </div>
+           
+            </a>    
+            
+            <a href="#stores items">
+          
+                <div class="categories">
+                    <img src="images.jpg" class="item-imag">
+                  
+                </div>
+                <div class="description">
+                    <b>Mustard oil</b>
+                    <div class="item-select">
+                    Price:Rs.200/Kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+        
+                    </select><br>
+                    <button class="buy">Buy Now</button>
+        
+                </div>
+           
+            </a> 
+            <a href="#stores items">
+          
+                <div class="categories">
+                    <img src="sugar.jpg" class="item-imag">
+                  
+                </div>
+                <div class="description">
+                    <b>Sugar</b>
+                    <div class="item-select">
+                    Price:Rs.45/Kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+        
+                    </select><br>
+                    <button class="buy">Buy Now</button>
+        
+                </div>
+           
+            </a> 
+            <a href="#stores items">
+          
+                <div class="categories">
+                    <img src="dal.jpg" class="item-imag">
+                  
+                </div>
+                <div class="description">
+                    <b>Dal</b>
+                    <div class="item-select">
+                    Price:Rs.160/Kg
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+        
+                    </select><br>
+                    <button class="buy">Buy Now</button>
+        
+                </div>
+           
+            </a>
+            <div class="deal">
+                save 20% on min-purchase of Rs. 200 on Vegetables <br>
+                <button class="coupon-btn">ADD COUPON</button>
+
+            </div> 
+            <div class="deal">
+                save 10% on min-purchase of Rs. 200 on Fruits <br>
+                <button class="coupon-btn">ADD COUPON</button>
+
+            </div> 
+            <div class="deal">
+                save 15% on min-purchase of Rs. 300 on Meat <br>
+                <button class="coupon-btn">ADD COUPON</button>
+
+            </div> 
+            <div class="last">
+             <div class="footer">
+            <div class="quick-links">
+             <div>Locations</div>
+             <ul>
+                <li><a href="" class="a-links">Address 1</a></li>
+                <li><a href="" class="a-links">Address 2</a></li>
+                <li><a href="" class="a-links">Address 3</a></li>
+             </ul>   
+            </div>
+            <div class="quick-links">
+                <div>Careers</div>
+                <ul>
+                   <li><a href="" class="a-links">Packing Staff</a></li>
+                   <li><a href="" class="a-links">Delivery Agents</a></li>
+                   <li><a href="" class="a-links">Shelf Fillers</a></li>
+                </ul>   
+               </div>
+               <div class="quick-links">
+                <div>Quick-links</div>
+                <ul>
+                   <li><a href="" class="a-links">Contact</a></li>
+                   <li><a href="" class="a-links">FAQ</a></li>
+                   <li><a href="" class="a-links">Help</a></li>
+                </ul>   
+               </div>
+             </div>   
+            </div><br><br>
+            <div class="copyright">
+             @ 2022 By Programmers Web Drive  
+            </div><br><br>
+
+            
+           
+           
+           
+</body>
+</html>
